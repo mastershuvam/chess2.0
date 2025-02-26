@@ -124,3 +124,7 @@ socket.on('gameOverDisconnect', function() {
     gameOver = true;
     updateStatus()
 });
+
+socket.on('playerJoined', function(player) {
+    alert(player + ' has joined the game!');
+});
